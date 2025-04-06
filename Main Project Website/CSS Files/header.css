@@ -1,0 +1,167 @@
+html, body {
+    font-family: Arial, sans-serif;
+    width: 100%;
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+    margin: 0;
+    padding: 0;
+}
+
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 20px;
+}
+
+.gallery-container {
+    flex: 1;
+    background-color: #fff;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item {
+    background-color: #e9ecef;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.gallery-item:hover {
+    background-color: #dee2e6;
+}
+
+h2 {
+    color: #343a40;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+label {
+    margin-right: 10px;
+}
+
+input[type="number"] {
+    padding: 5px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+}
+
+button {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.center-div {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+header {
+    background-color: #333333;
+    padding: 15px 0;
+    text-align: center;
+}
+
+header .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+header .logo img {
+    height: 100px;
+    width: auto;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    color: #f1f1f1;
+}
+
+footer {
+    background-color: #505050; /* Darker grey */
+    padding: 15px 0; /* Reduced height by 1/4 */
+    text-align: center;
+    color: white;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.content-container {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Ensures proper alignment */
+    width: 100%;
+    height: calc(100vh - 150px); /* Leaves space for header & footer */
+    box-sizing: border-box; /* Prevents padding from increasing width */
+    gap: 20px
+}
+
+.text-content {
+    flex: 1; /* 1/3 of the space */
+    padding: 10px;
+    text-align: center;
+}
+
+.image-content {
+    flex: 2; /* 2/3 of the space */
+    display: flex;
+    justify-content: center; /* Center the image */
+    align-items: center;
+    width: 100%; /* Ensures it uses full space */
+    height: 100%; /* Ensures no white space */
+}
+
+.image-content img {
+    width: 100%; /* Makes image fully occupy .image-content */
+    height: 100%; /* Forces it to take full height */
+    object-fit: cover; /* Prevents stretching & removes white space */
+}
+
